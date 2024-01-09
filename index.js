@@ -1,8 +1,12 @@
 async function init() {
-    const {results} = await (await fetch("./data.json")).json();
+    const {
+        results
+    } = await (await fetch("./data.json")).json();
     /** @type {Map<number, {title: string, id: number, poster_path: string}} */
     function render() {
-        const {searchParams} = new URL(location.href);
+        const {
+            searchParams
+        } = new URL(location.href);
         const sort_by = document.forms.sorter.elements.sort.value;
         const movies = new Map(results.map(movie => [movie.id, movie]));
         const list = document.querySelector("section#list ul");
@@ -16,7 +20,7 @@ async function init() {
         }
 
         for (const movie of Array.from(movies.values()).sort((a, b) => value(a, sort_by) - value(b, sort_by))) {
-            const li = /** @type {HTMLTemplateElement} */(document.querySelector("template#movie-item")).content.firstElementChild.cloneNode(true);
+            const li = /** @type {HTMLTemplateElement} */ (document.querySelector("template#movie-item")).content.firstElementChild.cloneNode(true);
             li.querySelector("span").innerText = movie.title;
             li.querySelector("img").src = `https://image.tmdb.org/t/p/w200${movie.poster_path}`;
             li.querySelector("a").href = `?movie=${movie.id}`;
