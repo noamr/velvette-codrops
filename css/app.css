@@ -2,6 +2,7 @@
     position: absolute;
     top: 40px;
     display: flex;
+    justify-content: flex-start;
 }
 
 :root.details section#list,
@@ -50,6 +51,5 @@ section#details {
         color: black;
         text-decoration: none;
         align-items: center;
-
     }
 }
