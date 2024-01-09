@@ -39,6 +39,14 @@ async function init() {
     });
 
     render();
+
+    window.navigation.addEventListener("navigate", e => {
+        e.intercept({
+            handler() {
+                render();
+            }
+        });
+    });
 }
 
 init();
