@@ -38,7 +38,15 @@ async function init() {
         document.documentElement.classList.toggle("details", searchParams.has("movie"));
     }
 
-    document.forms.sorter.addEventListener("change", () => render());
+    document.forms.sorter.addEventListener("change", e => {
+        sort_by = e.target.form.elements.sort.value;
+        Velvette.startViewTransition({
+            update: () => render(),
+            captures: {
+                "section#list li[:id]": "$(id)"
+            }
+        });
+    });
 
     render();
 
