@@ -38,22 +38,23 @@ async function init() {
         document.documentElement.classList.toggle("details", searchParams.has("movie"));
     }
 
-    document.forms.sorter.addEventListener("change", () =>
+    document.forms.sorter.addEventListener("change", () => {
         Velvette.startViewTransition({
             update: () => render(),
             captures: {
                 "section#list li[:id]": "$(id)"
             }
-        }));
+        });
+    });
 
-    const velvette  = new Velvette({
+    const velvette = new Velvette({
         routes: {
             details: "?movie=:movie_id",
             list: "?list"
         },
-        rules: [
-            {with: ["list", "details"]},
-        ],
+        rules: [{
+            with: ["list", "details"]
+        }, ],
         captures: {
             ".vt-route-details img#hero": "movie-artwork",
             ".vt-route-list li#movie-$(movie_id) img": "movie-artwork"
