@@ -48,15 +48,29 @@ async function init() {
         });
     });
 
-    render();
+    const velvette  = new Velvette({
+        routes: {
+            details: "?movie=:movie_id",
+            list: "?list"
+        },
+        rules: [
+            {with: ["list", "details"]},
+        ],
+        captures: {
+            ".vt-route-details img#hero": "movie-artwork",
+            ".vt-route-list li#movie-$(movie_id) img": "movie-artwork"
+        }
+    });
 
     window.navigation.addEventListener("navigate", e => {
-        e.intercept({
+        velvette.intercept(e, {
             handler() {
                 render();
             }
         });
     });
+    render();
+
 }
 
 init();
