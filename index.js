@@ -53,11 +53,11 @@ async function init() {
             list: "?list"
         },
         rules: [{
-            with: ["list", "details"]
+            with: ["list", "details"], class: "expand"
         }, ],
         captures: {
-            ".vt-route-details img#hero": "movie-artwork",
-            ".vt-route-list li#movie-$(movie_id) img": "movie-artwork"
+            ":root.vt-expand.vt-route-details img#hero": "movie-artwork",
+            ":root.vt-expand.vt-route-list li#movie-$(movie_id) img": "movie-artwork"
         }
     });
 
