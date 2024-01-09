@@ -3,32 +3,51 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Demoname | Demo 1 | Codrops</title>
-		<meta name="description" content="" />
+		<title>Velvette View Transitions | Codrops</title>
+		<meta name="description" content="Easy CSSview-transitions with Velvette" />
 		<meta name="keywords" content="" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
 		<script>document.documentElement.className="js";</script>
 		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
 	</head>
 	<body class="demo-1">
 		<main>
 			<header class="frame">
-				<h1 class="frame__title">The Title</h1> 
+				<h1 class="frame__title">Velvette Easy View Transitions</h1>
 				<a class="frame__back" href="https://tympanus.net/codrops/?p=">Article</a>
-				<a class="frame__prev" href="">Previous demo</a>
 				<a class="frame__sub" href="https://tympanus.net/codrops/collective/">Subscribe</a>
-				<nav class="frame__demos">
-					<span>Demo 1</span>
-					<a href="index2.html">Demo 2</a>
-					<a href="index3.html">Demo 3</a>
-				</nav>
 			</header>
 			<div class="content">
-				<h2>The Content</h2>
+				<section id="list">
+					<form id="sorter">
+						Sort by:
+						<label><input type="radio" name="sort" value="id" checked>ID</label>
+						<label><input type="radio" name="sort" value="title">Title</label>
+						<label><input type="radio" name="sort" value="release_date">Release Date</label>
+					</form>
+					<ul>
+					</ul>
+				</section>
+				<section id="details">
+					<a href=".">
+						<img id="hero">
+						<h4 class="title"></h4>
+					</a>
+				</section>
 			</div>
 		</main>
+		<script src="./index.js"></script>
+		<template id="movie-item">
+			<li class="item">
+				<a>
+					<img class="thumb">
+					<span></span>
+				</a>
+			</li>
+		</template>
 		<!--script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script-->
 	</body>
 </html>
