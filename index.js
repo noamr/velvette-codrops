@@ -20,6 +20,7 @@ async function init() {
             li.querySelector("span").innerText = movie.title;
             li.querySelector("img").src = `https://image.tmdb.org/t/p/w200${movie.poster_path}`;
             li.querySelector("a").href = `?movie=${movie.id}`;
+            li.id = `movie-${movie.id}`;
             list.append(li);
         }
 
