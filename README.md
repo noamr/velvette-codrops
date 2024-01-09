@@ -1,13 +1,4 @@
-*How to use this template:*
-
-- Styles for the demo go in css/base.css
-- Add build instructions and credits to the README.md
-- For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
-- Delete this 'how to' intro in the final version and leave the following (fill in title/description, credits and social links of your likings, we'll do the rest):
-
--------
-
-# The Title of the Demo
+# Animating a music app with Velvette
 
 *A description of the demo goes here.*
 
@@ -21,13 +12,7 @@
 
 Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server).
 
-## Credits
-
-- Images generated with [Midjourney](https://midjourney.com)
-
 ## Misc
-
-Follow *Author*: [Twitter](), [Instagram](), [GitHub]() 
 
 Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
