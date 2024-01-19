@@ -1,12 +1,12 @@
-# Animating a music app with Velvette
+# Animating a movies app with Velvette
 
-*A description of the demo goes here.*
+A demo for the tutorial on how to use Velvette for easy CSS view-transitions.
 
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
+![Movies app](https://tympanus.net/codrops/wp-content/uploads/2024/01/velvette.png?x65929)
 
-[Article on Codrops](https://tympanus.net/codrops/?p=)
+[Article on Codrops](https://tympanus.net/codrops/?p=75261)
 
-[Demo](http://tympanus.net/Development/.../)
+[Demo](http://tympanus.net/Tutorials/Velvette/)
 
 ## Installation
 
