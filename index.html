@@ -4,29 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Velvette View Transitions | Codrops</title>
-		<meta name="description" content="Easy CSSview-transitions with Velvette" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="Codrops" />
+		<meta name="description" content="Easy CSS view-transitions with Velvette" />
+		<meta name="author" content="Noam Rosenthal for Codrops" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/app.css" />
 		<script>document.documentElement.className="js";</script>
-		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
 	</head>
-	<body class="demo-1">
+	<body>
 		<main>
 			<header class="frame">
 				<h1 class="frame__title">Velvette Easy View Transitions</h1>
-				<a class="frame__back" href="https://tympanus.net/codrops/?p=">Article</a>
+				<a class="frame__back" href="https://tympanus.net/codrops/?p=75261">Read the tutorial</a>
 				<a class="frame__sub" href="https://tympanus.net/codrops/collective/">Subscribe</a>
 			</header>
 			<div class="content">
 				<section id="list">
 					<form id="sorter">
 						Sort by:
-						<label><input type="radio" name="sort" value="id" checked>ID</label>
-						<label><input type="radio" name="sort" value="title">Title</label>
-						<label><input type="radio" name="sort" value="release_date">Release Date</label>
+						<label><input type="radio" name="sort" value="id" checked><span>ID</span></label>
+						<label><input type="radio" name="sort" value="title"><span>Title</span></label>
+						<label><input type="radio" name="sort" value="release_date"><span>Release Date</span></label>
 					</form>
 					<ul>
 					</ul>
@@ -34,7 +32,7 @@
 				<section id="details">
 					<a href="?list">
 						<img id="hero">
-						<h4 class="title"></h4>
+						<h4 class="title title--single"></h4>
 					</a>
 				</section>
 			</div>
@@ -44,10 +42,9 @@
 			<li class="item">
 				<a>
 					<img class="thumb">
-					<span></span>
+					<span class="title"></span>
 				</a>
 			</li>
 		</template>
-		<!--script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script-->
 	</body>
 </html>

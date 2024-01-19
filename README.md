@@ -1,8 +1,8 @@
 # Animating a movies app with Velvette
 
-*A description of the demo goes here.*
+A demo for the tutorial on how to use Velvette for easy CSS view-transitions.
 
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
+![Movies app](https://generative-placeholders.glitch.me/image?width=800&height=600")
 
 [Article on Codrops](https://tympanus.net/codrops/?p=)
 
