@@ -1,4 +1,4 @@
-# Animating a movies app with Velvette
+# Animating a movies app with Velvette (Animations branch)
 
 A demo for the tutorial on how to use Velvette for easy CSS view-transitions.
 
