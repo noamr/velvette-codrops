@@ -176,8 +176,8 @@ a:focus-visible {
 	}
 	.frame #cdawrap, .frame__sub {
 		justify-self: end;
-    max-width: 200px;
-    text-align: right;
+		max-width: 200px;
+		text-align: right;
 	}
 	.content {
 		min-height: 100vh;
