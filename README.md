@@ -1,4 +1,4 @@
-# Animating a music app with Velvette
+# Animating a movies app with Velvette
 
 *A description of the demo goes here.*
 
