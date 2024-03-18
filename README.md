@@ -6,7 +6,7 @@ A demo for the tutorial on how to use Velvette for easy CSS view-transitions.
 
 [Article on Codrops](https://tympanus.net/codrops/?p=)
 
-[Demo](http://tympanus.net/Development/.../)
+[Demo](https://tympanus.net/Tutorials/Velvette/)
 
 ## Installation
 
