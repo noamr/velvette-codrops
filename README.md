@@ -4,7 +4,7 @@ A demo for the tutorial on how to use Velvette for easy CSS view-transitions.
 
 ![Movies app](https://tympanus.net/codrops/wp-content/uploads/2024/01/velvette.png?x65929)
 
-[Article on Codrops](https://tympanus.net/codrops/?p=)
+[Article on Codrops](https://tympanus.net/codrops/2024/01/19/making-css-view-transitions-easy-with-velvette/)
 
 [Demo](https://tympanus.net/Tutorials/Velvette/)
 
