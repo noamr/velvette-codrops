@@ -61,8 +61,12 @@ async function init() {
         }
     });
 
-    window.navigation.addEventListener("navigate", e => {
-        velvette.intercept(e, {
+    window.navigation.addEventListener("navigate", event => {
+        const url = new URL(event.destination.url);
+        if (location.pathname !== url.pathname)
+            return;
+
+        velvette.intercept(event, {
             handler() {
                 render();
             }
