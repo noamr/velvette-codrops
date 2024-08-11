@@ -19,7 +19,14 @@ async function init() {
                 return movie[prop]
         }
 
-        for (const movie of Array.from(movies.values()).sort((a, b) => value(a, sort_by) - value(b, sort_by))) {
+        for (const movie of Array.from(movies.values()).sort((a, b) => {
+                const valueA = value(a, sort_by); 
+                const valueB = value(b, sort_by);
+                if ( typeof valueA === "string" ){
+                    return valueA > valueB ? 1 : valueA < valueB ? -1 : 0;
+                }
+                return valueA - valueB;
+            })) {
             const li = /** @type {HTMLTemplateElement} */ (document.querySelector("template#movie-item")).content.firstElementChild.cloneNode(true);
             li.querySelector("span").innerText = movie.title;
             li.querySelector("img").src = `https://image.tmdb.org/t/p/w200${movie.poster_path}`;
